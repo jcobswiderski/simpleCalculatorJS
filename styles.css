@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-size: 12px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 34em;
+
+    padding: 1em;
+    margin: 1em;
+    background-color: darkgray;
+}
+
+#inputField {
+    width: 100%;
+    height: 5em;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: black;
+    color: green;
+}
+
+.keypad {
+    display: flex;
+    margin-top: 1em;
+}
+
+.numericPanel {
+    display: grid;
+    grid-template-areas:
+        "num7 num8 num9"
+        "num4 num5 num6"
+        "num1 num2 num3"
+        "num0 num0 opDot";
+    margin-right: 1em;
+}
+
+.num7 {grid-area: num7;}
+.num8 {grid-area: num8;}
+.num9 {grid-area: num9;}
+.num4 {grid-area: num4;}
+.num5 {grid-area: num5;}
+.num6 {grid-area: num6;}
+.num1 {grid-area: num1;}
+.num2 {grid-area: num2;}
+.num3 {grid-area: num3;}
+.num0 {grid-area: num0;}
+.opDot {grid-area: opDot;}
+
+.operatorsPanel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "opClear opClear"
+        "opDivide opMultiply"
+        "opPlus opMinus"
+        "opEquals opEquals";
+}
+
+.opDivide {grid-area: opDivide;}
+.opClear {grid-area: opClear;}
+.opMultiply {grid-area: opMultiply;}
+.opMinus {grid-area: opMinus;}
+.opPlus {grid-area: opPlus;}
+.opEquals {grid-area: opEquals;}
+
+.btn {
+    width: 80px;
+    height: 80px;
+}
+
+.operatorsPanel .btn {
+    background-color: #E3E3E3;
+    border: 1px gray solid;
+}
+
+.operatorsPanel .btn:hover {
+    background: rgb(239, 239, 239);
+}
+
+.btn--large {
+    width: 160px;
+}
+
+.font-bigger {
+    font-size: 2em;
+}
+
+.btn--green {
+    background-color: greenyellow !important;
+}
+
+.btn--red {
+    background-color: firebrick !important;  
+}

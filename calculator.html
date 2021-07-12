@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator">
+    <input type="text" id="inputField">
+    <div class="keypad">
+      <section class="numericPanel">
+          <button class="num7 btn">7</button>
+          <button class="num8 btn">8</button>
+          <button class="num9 btn">9</button>
+          <button class="num4 btn">4</button>
+          <button class="num5 btn">5</button>
+          <button class="num6 btn">6</button>
+          <button class="num1 btn">1</button>
+          <button class="num2 btn">2</button>
+          <button class="num3 btn">3</button>
+          <button class="num0 btn btn--large">0</button>
+          <button class="opDot btn font-bigger">.</button>
+      </section>
+      <section class="operatorsPanel">
+          <button class="opClear btn btn--large btn--red">C</button>
+          <button class="opDivide btn">/</button>
+          <button class="opMultiply btn">*</button>
+          <button class="opPlus btn">+</button>
+          <button class="opMinus btn">-</button>
+          <button class="opEquals btn btn--large btn--green">=</button>
+      </section>
+    </div>
+  </main>
+  <script src="math.min.js"></script>
+  <script src="calculator.js"></script>
+</body>
+</html>
